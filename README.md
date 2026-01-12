@@ -2,26 +2,26 @@
 
 Python script to parse data from 'Check/Print Courses Registered' to ICS
 
-# Branch Structure
+## Branch Structure
 
 - `main` → stable branch for local use
 - `feature-fes` → flask experiments
 - `prod-heroku-outdated` → Heroku shuts down free tier
 - `prod-render` → deployed to Render
 
-# File Structure
+## File Structure
 
 - `server.py` → production server
 - `vibe.py` → generate `.ics` from course data
 - `groove.py` → converts `.ics` to `.json` for calendar view
 - `scrap.py` → prepare HTML data before passing to `vibe.py`
 
-# Input Data Required
+## Input Data Required
 
 - Date of semester's first day according to [NTU Calendar](https://www.ntu.edu.sg/admissions/matriculation/academic-calendars)
 - Semester's course data from [Check/Print Courses Registered](https://sso.wis.ntu.edu.sg/webexe88/owa/sso_redirect.asp?t=1&app=https://wish.wis.ntu.edu.sg/pls/webexe/aus_stars_check.check_subject_web2)
 
-# Usage
+## Usage
 
 ### 1. Using the Deployed [Site](https://ntuical.onrender.com)
 
@@ -86,7 +86,7 @@ Python script to parse data from 'Check/Print Courses Registered' to ICS
   - `<DDMMYYYY>`: date of semester's first day (eg., `09082021`)
 - The `.ics` file will be saved in the same directory with the same name as your input file
 
-# Supported Cases
+## Supported Cases
 
 - [x] Exempted Modules
 - [x] Online Modules
